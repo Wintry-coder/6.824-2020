@@ -46,7 +46,7 @@ func main() {
 			log.Fatalf("cannot read %v", filename)
 		}
 		file.Close()
-		kva := mapf(filename, string(content))
+		kva := mapf(filename, string(content))	//return a array of {key, value}, such as {dog, 1}
 		intermediate = append(intermediate, kva...)
 	}
 
@@ -73,12 +73,12 @@ func main() {
 		}
 		values := []string{}
 		for k := i; k < j; k++ {
-			values = append(values, intermediate[k].Value)
+			values = append(values, intermediate[k].Value)  //将相同Key的value都收集起来
 		}
-		output := reducef(intermediate[i].Key, values)
+		output := reducef(intermediate[i].Key, values)  //reduce进行处理
 
 		// this is the correct format for each line of Reduce output.
-		fmt.Fprintf(ofile, "%v %v\n", intermediate[i].Key, output)
+		fmt.Fprintf(ofile, "%v %v\n", intermediate[i].Key, output)  //写入
 
 		i = j
 	}
