@@ -22,6 +22,22 @@ type ExampleReply struct {
 	Y int
 }
 
+type Args struct {
+	X int
+	RPCType int //0 是接任务， 1是交任务
+	TaskType int
+	TaskState int
+	TaskID int
+	Files []string
+}
+
+type Reply struct {
+	Y int
+	Files []string
+	TaskType int
+	TaskID int
+}
+
 // Add your RPC definitions here.
 
 
