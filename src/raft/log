@@ -1,255 +1,165 @@
 Test (2A): initial election ...
-2022/05/01 13:32:19 1 election timeout!
-2022/05/01 13:32:19 Requestvote RPC begin: 1 to 2!
-2022/05/01 13:32:19 Requestvote RPC begin: 1 to 0!
-2022/05/01 13:32:19 Requestvote RPC end: 1 to 2 and time is 445.35µs!
-2022/05/01 13:32:19 1 wins the vote from 2!
-2022/05/01 13:32:19 1 becomes leader in term 1!
-2022/05/01 13:32:19 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:19 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:19 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:19 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:19 Requestvote RPC end: 1 to 0 and time is 621.246µs!
-2022/05/01 13:32:19 1 wins the vote from 0!
-2022/05/01 13:32:19 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:19 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:19 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:19 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:20 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:21 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:22 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:22 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:22 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:22 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:22 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:22 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:22 AppendEntries RPC end: 1 to 0!
-2022/05/01 13:32:22 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:22 AppendEntries RPC begin: 1 to 2!
-2022/05/01 13:32:22 AppendEntries RPC begin: 1 to 0!
-2022/05/01 13:32:22 AppendEntries RPC end: 1 to 2!
-2022/05/01 13:32:22 AppendEntries RPC end: 1 to 0!
-  ... Passed --   3.0  3   38   12376    0
+2022/05/02 15:11:30 1 election timeout!
+2022/05/02 15:11:30 Requestvote RPC begin: 1 to 2!
+2022/05/02 15:11:30 Requestvote RPC begin: 1 to 0!
+2022/05/02 15:11:30 Requestvote RPC end: 1 to 2 and time is 333.892µs!
+2022/05/02 15:11:30 1 wins the vote from 2!
+2022/05/02 15:11:30 1 becomes leader in term 1!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:30 Requestvote RPC end: 1 to 0 and time is 233.731µs!
+2022/05/02 15:11:30 1 wins the vote from 0!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:33 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:33 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:33 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:33 AppendEntries RPC end: 1 to 0!
+  ... Passed --   3.5  3   44   14386    0
 Test (2A): election after network failure ...
-2022/05/01 13:32:22 2 election timeout!
-2022/05/01 13:32:22 Requestvote RPC begin: 2 to 1!
-2022/05/01 13:32:22 Requestvote RPC begin: 2 to 0!
-2022/05/01 13:32:22 Requestvote RPC end: 2 to 1 and time is 350.598µs!
-2022/05/01 13:32:22 2 wins the vote from 1!
-2022/05/01 13:32:22 2 becomes leader in term 1!
-2022/05/01 13:32:22 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:22 Requestvote RPC end: 2 to 0 and time is 276.985µs!
-2022/05/01 13:32:22 2 wins the vote from 0!
-2022/05/01 13:32:22 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:22 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:22 AppendEntries RPC end: 2 to 0!
-2022/05/01 13:32:23 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:23 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:23 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:23 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:23 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:23 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:23 0 election timeout!
-2022/05/01 13:32:23 Requestvote RPC begin: 0 to 2!
-2022/05/01 13:32:23 Requestvote RPC begin: 0 to 1!
-2022/05/01 13:32:23 Requestvote RPC end: 0 to 1 and time is 377.761µs!
-2022/05/01 13:32:23 0 wins the vote from 1!
-2022/05/01 13:32:23 0 becomes leader in term 2!
-2022/05/01 13:32:23 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:23 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:23 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:23 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:23 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:23 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:23 AppendEntries RPC end: 2 to 0!
-2022/05/01 13:32:23 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:23 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:23 AppendEntries RPC end: 0 to 2!
-2022/05/01 13:32:23 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:23 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:23 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:23 AppendEntries RPC end: 0 to 2!
-2022/05/01 13:32:23 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:23 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:23 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:23 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:23 AppendEntries RPC end: 0 to 2!
-2022/05/01 13:32:23 AppendEntries RPC end: 2 to 0!
-2022/05/01 13:32:23 AppendEntries RPC return false: 2 to 0!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:24 2 election timeout!
-2022/05/01 13:32:24 Requestvote RPC begin: 2 to 1!
-2022/05/01 13:32:24 Requestvote RPC begin: 2 to 0!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:24 1 election timeout!
-2022/05/01 13:32:24 Requestvote RPC begin: 1 to 2!
-2022/05/01 13:32:24 Requestvote RPC begin: 1 to 0!
-2022/05/01 13:32:24 Requestvote RPC end: 0 to 2 and time is 1.177390707s!
-2022/05/01 13:32:24 Requestvote RPC return false: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:24 AppendEntries RPC end: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC return false: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC end: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC return false: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:24 AppendEntries RPC end: 0 to 2!
-2022/05/01 13:32:24 AppendEntries RPC return false: 0 to 2!
-2022/05/01 13:32:24 2 election timeout!
-2022/05/01 13:32:24 Requestvote RPC begin: 2 to 1!
-2022/05/01 13:32:24 Requestvote RPC begin: 2 to 0!
-2022/05/01 13:32:25 Requestvote RPC end: 1 to 0 and time is 528.191931ms!
-2022/05/01 13:32:25 Requestvote RPC return false: 1 to 0!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:25 1 election timeout!
-2022/05/01 13:32:25 Requestvote RPC begin: 1 to 2!
-2022/05/01 13:32:25 Requestvote RPC begin: 1 to 0!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:25 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:25 AppendEntries RPC return false: 0 to 1!
-2022/05/01 13:32:25 2 election timeout!
-2022/05/01 13:32:25 Requestvote RPC begin: 2 to 1!
-2022/05/01 13:32:25 Requestvote RPC begin: 2 to 0!
-2022/05/01 13:32:25 AppendEntries RPC end: 0 to 2!
-2022/05/01 13:32:25 AppendEntries RPC return false: 0 to 2!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:25 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:25 AppendEntries RPC return false: 2 to 1!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:25 Requestvote RPC end: 2 to 0 and time is 262.19348ms!
-2022/05/01 13:32:25 Requestvote RPC return false: 2 to 0!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:25 1 election timeout!
-2022/05/01 13:32:25 Requestvote RPC begin: 1 to 2!
-2022/05/01 13:32:25 Requestvote RPC begin: 1 to 0!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:25 Requestvote RPC end: 2 to 0 and time is 1.60193672s!
-2022/05/01 13:32:25 Requestvote RPC return false: 2 to 0!
-2022/05/01 13:32:25 2 election timeout!
-2022/05/01 13:32:25 Requestvote RPC begin: 2 to 1!
-2022/05/01 13:32:25 Requestvote RPC begin: 2 to 0!
-2022/05/01 13:32:25 Requestvote RPC end: 2 to 1 and time is 902.863µs!
-2022/05/01 13:32:25 2 wins the vote from 1!
-2022/05/01 13:32:25 2 becomes leader in term 6!
-2022/05/01 13:32:25 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:25 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:25 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:25 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:25 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:25 AppendEntries RPC return false: 0 to 1!
-2022/05/01 13:32:26 Requestvote RPC end: 2 to 1 and time is 603.307367ms!
-2022/05/01 13:32:26 Requestvote RPC return false: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC end: 0 to 2!
-2022/05/01 13:32:26 AppendEntries RPC return false: 0 to 2!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:26 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC return false: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:26 Requestvote RPC end: 2 to 0 and time is 1.451326053s!
-2022/05/01 13:32:26 Requestvote RPC return false: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 0 to 2!
-2022/05/01 13:32:26 AppendEntries RPC begin: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC return false: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC return false: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC return false: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC return false: 0 to 1!
-2022/05/01 13:32:26 Requestvote RPC end: 1 to 2 and time is 2.291283266s!
-2022/05/01 13:32:26 Requestvote RPC return false: 1 to 2!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC begin: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 1!
-2022/05/01 13:32:26 AppendEntries RPC end: 2 to 0!
-2022/05/01 13:32:26 AppendEntries RPC end: 0 to 1!
-2022/05/01 13:32:26 AppendEntries RPC return false: 0 to 1!
-  ... Passed --   4.5  3   84   21208    0
-PASS
-ok  	_/home/ywj/6.824/src/raft	7.555s
+2022/05/02 15:11:33 1 election timeout!
+2022/05/02 15:11:33 Requestvote RPC begin: 1 to 2!
+2022/05/02 15:11:33 Requestvote RPC begin: 1 to 0!
+2022/05/02 15:11:33 Requestvote RPC end: 1 to 0 and time is 172.95µs!
+2022/05/02 15:11:33 1 wins the vote from 0!
+2022/05/02 15:11:33 1 becomes leader in term 1!
+2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:33 Requestvote RPC end: 1 to 2 and time is 248.204µs!
+2022/05/02 15:11:33 1 wins the vote from 2!
+2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:33 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:33 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:34 2 election timeout!
+2022/05/02 15:11:34 Requestvote RPC begin: 2 to 1!
+2022/05/02 15:11:34 Requestvote RPC begin: 2 to 0!
+2022/05/02 15:11:34 Requestvote RPC end: 2 to 0 and time is 255.177µs!
+2022/05/02 15:11:34 2 wins the vote from 0!
+2022/05/02 15:11:34 2 becomes leader in term 2!
+2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 1!
+2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 0!
+2022/05/02 15:11:34 AppendEntries RPC end: 2 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 1!
+2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 0!
+2022/05/02 15:11:34 AppendEntries RPC end: 2 to 1!
+2022/05/02 15:11:34 AppendEntries RPC end: 2 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 1!
+2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 0!
+2022/05/02 15:11:34 AppendEntries RPC end: 2 to 1!
+2022/05/02 15:11:34 AppendEntries RPC end: 2 to 0!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:34 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:34 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:35 AppendEntries RPC begin: 2 to 1!
+2022/05/02 15:11:35 AppendEntries RPC begin: 2 to 0!
+2022/05/02 15:11:35 AppendEntries RPC end: 2 to 1!
+2022/05/02 15:11:35 AppendEntries RPC end: 2 to 0!
+2022/05/02 15:11:35 AppendEntries RPC begin: 1 to 2!
+2022/05/02 15:11:35 AppendEntries RPC begin: 1 to 0!
+2022/05/02 15:11:35 AppendEntries RPC end: 1 to 0!
+2022/05/02 15:11:35 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:35 AppendEntries RPC end: 1 to 2!
+2022/05/02 15:11:35 AppendEntries RPC return false: 1 to 2!
+2022/05/02 15:11:35 AppendEntries RPC begin: 2 to 1!
+2022/05/02 15:11:35 AppendEntries RPC begin: 2 to 0!
+2022/05/02 15:11:35 AppendEntries RPC end: 2 to 1!
+2022/05/02 15:11:35 AppendEntries RPC end: 2 to 0!
+--- FAIL: TestReElection2A (1.95s)
+    config.go:319: term 2 has 2 (>1) leaders
+FAIL
+exit status 1
+FAIL	_/home/ywj/6.824/src/raft	5.481s
