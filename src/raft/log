@@ -1,165 +1,806 @@
-Test (2A): initial election ...
-2022/05/02 15:11:30 1 election timeout!
-2022/05/02 15:11:30 Requestvote RPC begin: 1 to 2!
-2022/05/02 15:11:30 Requestvote RPC begin: 1 to 0!
-2022/05/02 15:11:30 Requestvote RPC end: 1 to 2 and time is 333.892µs!
-2022/05/02 15:11:30 1 wins the vote from 2!
-2022/05/02 15:11:30 1 becomes leader in term 1!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:30 Requestvote RPC end: 1 to 0 and time is 233.731µs!
-2022/05/02 15:11:30 1 wins the vote from 0!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:30 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:30 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:31 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:32 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:33 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:33 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:33 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:33 AppendEntries RPC end: 1 to 0!
-  ... Passed --   3.5  3   44   14386    0
-Test (2A): election after network failure ...
-2022/05/02 15:11:33 1 election timeout!
-2022/05/02 15:11:33 Requestvote RPC begin: 1 to 2!
-2022/05/02 15:11:33 Requestvote RPC begin: 1 to 0!
-2022/05/02 15:11:33 Requestvote RPC end: 1 to 0 and time is 172.95µs!
-2022/05/02 15:11:33 1 wins the vote from 0!
-2022/05/02 15:11:33 1 becomes leader in term 1!
-2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:33 Requestvote RPC end: 1 to 2 and time is 248.204µs!
-2022/05/02 15:11:33 1 wins the vote from 2!
-2022/05/02 15:11:33 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:33 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:33 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:34 2 election timeout!
-2022/05/02 15:11:34 Requestvote RPC begin: 2 to 1!
-2022/05/02 15:11:34 Requestvote RPC begin: 2 to 0!
-2022/05/02 15:11:34 Requestvote RPC end: 2 to 0 and time is 255.177µs!
-2022/05/02 15:11:34 2 wins the vote from 0!
-2022/05/02 15:11:34 2 becomes leader in term 2!
-2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 1!
-2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 0!
-2022/05/02 15:11:34 AppendEntries RPC end: 2 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 1!
-2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 0!
-2022/05/02 15:11:34 AppendEntries RPC end: 2 to 1!
-2022/05/02 15:11:34 AppendEntries RPC end: 2 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 1!
-2022/05/02 15:11:34 AppendEntries RPC begin: 2 to 0!
-2022/05/02 15:11:34 AppendEntries RPC end: 2 to 1!
-2022/05/02 15:11:34 AppendEntries RPC end: 2 to 0!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:34 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:34 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:35 AppendEntries RPC begin: 2 to 1!
-2022/05/02 15:11:35 AppendEntries RPC begin: 2 to 0!
-2022/05/02 15:11:35 AppendEntries RPC end: 2 to 1!
-2022/05/02 15:11:35 AppendEntries RPC end: 2 to 0!
-2022/05/02 15:11:35 AppendEntries RPC begin: 1 to 2!
-2022/05/02 15:11:35 AppendEntries RPC begin: 1 to 0!
-2022/05/02 15:11:35 AppendEntries RPC end: 1 to 0!
-2022/05/02 15:11:35 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:35 AppendEntries RPC end: 1 to 2!
-2022/05/02 15:11:35 AppendEntries RPC return false: 1 to 2!
-2022/05/02 15:11:35 AppendEntries RPC begin: 2 to 1!
-2022/05/02 15:11:35 AppendEntries RPC begin: 2 to 0!
-2022/05/02 15:11:35 AppendEntries RPC end: 2 to 1!
-2022/05/02 15:11:35 AppendEntries RPC end: 2 to 0!
---- FAIL: TestReElection2A (1.95s)
-    config.go:319: term 2 has 2 (>1) leaders
-FAIL
-exit status 1
-FAIL	_/home/ywj/6.824/src/raft	5.481s
+Test (2B): basic agreement ...
+2022/05/05 14:09:34 2 will sleep 672.948963ms!
+2022/05/05 14:09:34 1 will sleep 676.899278ms!
+2022/05/05 14:09:34 0 will sleep 638.860183ms!
+2022/05/05 14:09:35 0 election timeout!
+2022/05/05 14:09:35 0 will sleep 434.841478ms!
+2022/05/05 14:09:35 Requestvote begin: 0 to 2!
+2022/05/05 14:09:35 Requestvote begin: 0 to 1!
+2022/05/05 14:09:35 Requestvote end: 0 to 1 and time is 478.062µs!
+2022/05/05 14:09:35 0 wins the vote from 1!
+2022/05/05 14:09:35 0 becomes leader in term 1!
+
+2022/05/05 14:09:35 HeartBeat begin: 0 send (0 0 0) to 2!
+2022/05/05 14:09:35 Requestvote end: 0 to 2 and time is 648.608µs!
+2022/05/05 14:09:35 HeartBeat begin: 0 send (0 0 0) to 1!
+2022/05/05 14:09:35 HeartBeat end: 0 send (0 0 0) to 2!
+2022/05/05 14:09:35 Success! leader 0 to 2
+2022/05/05 14:09:35 HeartBeat end: 0 send (0 0 0) to 1!
+2022/05/05 14:09:35 Success! leader 0 to 1
+2022/05/05 14:09:35 Leader 0 add log 1
+2022/05/05 14:09:35 2 will sleep 631.037516ms!
+2022/05/05 14:09:35 1 will sleep 575.20484ms!
+2022/05/05 14:09:35 AppendEntries begin: 0 send (0 0 0) and log[1] to 2!
+2022/05/05 14:09:35 AppendEntries begin: 0 send (0 0 0) and log[1] to 1!
+2022/05/05 14:09:35 1 add log[1]
+2022/05/05 14:09:35 AppendEntries end: 0 send (0 0 0) and log[1] to 1!
+2022/05/05 14:09:35 Success! leader 0 to 1
+2022/05/05 14:09:35 Leader 0 applys log 1 !
+2022/05/05 14:09:35 2 add log[1]
+2022/05/05 14:09:35 AppendEntries end: 0 send (0 0 0) and log[1] to 2!
+2022/05/05 14:09:35 Success! leader 0 to 2
+2022/05/05 14:09:35 HeartBeat begin: 0 send (1 1 1) to 2!
+2022/05/05 14:09:35 HeartBeat begin: 0 send (1 1 1) to 1!
+2022/05/05 14:09:35 1 applys log 1!
+2022/05/05 14:09:35 2 applys log 1!
+2022/05/05 14:09:35 HeartBeat end: 0 send (1 1 1) to 1!
+2022/05/05 14:09:35 Success! leader 0 to 1
+2022/05/05 14:09:35 HeartBeat end: 0 send (1 1 1) to 2!
+2022/05/05 14:09:35 Success! leader 0 to 2
+2022/05/05 14:09:35 Leader 0 add log 2
+2022/05/05 14:09:35 AppendEntries begin: 0 send (1 1 1) and log[2] to 2!
+2022/05/05 14:09:35 2 add log[2]
+2022/05/05 14:09:35 AppendEntries begin: 0 send (1 1 1) and log[2] to 1!
+2022/05/05 14:09:35 AppendEntries end: 0 send (1 1 1) and log[2] to 2!
+2022/05/05 14:09:35 Success! leader 0 to 2
+2022/05/05 14:09:35 Leader 0 applys log 2 !
+2022/05/05 14:09:35 1 add log[2]
+2022/05/05 14:09:35 AppendEntries end: 0 send (1 1 1) and log[2] to 1!
+2022/05/05 14:09:35 Success! leader 0 to 1
+2022/05/05 14:09:35 HeartBeat begin: 0 send (2 1 2) to 2!
+2022/05/05 14:09:35 HeartBeat begin: 0 send (2 1 2) to 1!
+2022/05/05 14:09:35 2 applys log 2!
+2022/05/05 14:09:35 1 applys log 2!
+2022/05/05 14:09:35 HeartBeat end: 0 send (2 1 2) to 2!
+2022/05/05 14:09:35 Success! leader 0 to 2
+2022/05/05 14:09:35 HeartBeat end: 0 send (2 1 2) to 1!
+2022/05/05 14:09:35 Success! leader 0 to 1
+2022/05/05 14:09:35 1 will sleep 662.482172ms!
+2022/05/05 14:09:35 Leader 0 add log 3
+2022/05/05 14:09:35 2 will sleep 453.512303ms!
+2022/05/05 14:09:35 AppendEntries begin: 0 send (2 1 2) and log[3] to 2!
+2022/05/05 14:09:35 AppendEntries begin: 0 send (2 1 2) and log[3] to 1!
+2022/05/05 14:09:35 1 add log[3]
+2022/05/05 14:09:35 2 add log[3]
+2022/05/05 14:09:35 AppendEntries end: 0 send (2 1 2) and log[3] to 1!
+2022/05/05 14:09:35 Success! leader 0 to 1
+2022/05/05 14:09:35 Leader 0 applys log 3 !
+2022/05/05 14:09:35 AppendEntries end: 0 send (2 1 2) and log[3] to 2!
+2022/05/05 14:09:35 Success! leader 0 to 2
+2022/05/05 14:09:36 HeartBeat begin: 0 send (3 1 3) to 1!
+2022/05/05 14:09:36 HeartBeat begin: 0 send (3 1 3) to 2!
+2022/05/05 14:09:36 1 applys log 3!
+2022/05/05 14:09:36 2 applys log 3!
+2022/05/05 14:09:36 HeartBeat end: 0 send (3 1 3) to 1!
+2022/05/05 14:09:36 Success! leader 0 to 1
+2022/05/05 14:09:36 HeartBeat end: 0 send (3 1 3) to 2!
+2022/05/05 14:09:36 Success! leader 0 to 2
+  ... Passed --   1.5  3   16    5234    3
+Test (2B): RPC byte count ...
+2022/05/05 14:09:36 0 will sleep 680.885071ms!
+2022/05/05 14:09:36 2 will sleep 607.941479ms!
+2022/05/05 14:09:36 1 will sleep 462.887304ms!
+2022/05/05 14:09:36 1 election timeout!
+2022/05/05 14:09:36 1 will sleep 556.865242ms!
+2022/05/05 14:09:36 Requestvote begin: 1 to 2!
+2022/05/05 14:09:36 Requestvote begin: 1 to 0!
+2022/05/05 14:09:36 Requestvote end: 1 to 0 and time is 172.109µs!
+2022/05/05 14:09:36 1 wins the vote from 0!
+2022/05/05 14:09:36 1 becomes leader in term 1!
+
+2022/05/05 14:09:36 HeartBeat begin: 1 send (0 0 0) to 2!
+2022/05/05 14:09:36 Requestvote end: 1 to 2 and time is 212.987µs!
+2022/05/05 14:09:36 HeartBeat begin: 1 send (0 0 0) to 0!
+2022/05/05 14:09:36 HeartBeat end: 1 send (0 0 0) to 2!
+2022/05/05 14:09:36 Success! leader 1 to 2
+2022/05/05 14:09:36 HeartBeat end: 1 send (0 0 0) to 0!
+2022/05/05 14:09:36 Success! leader 1 to 0
+2022/05/05 14:09:36 Leader 1 add log 1
+2022/05/05 14:09:36 2 will sleep 340.727792ms!
+2022/05/05 14:09:36 AppendEntries begin: 1 send (0 0 0) and log[1] to 2!
+2022/05/05 14:09:36 AppendEntries begin: 1 send (0 0 0) and log[1] to 0!
+2022/05/05 14:09:36 2 add log[1]
+2022/05/05 14:09:36 0 add log[1]
+2022/05/05 14:09:36 AppendEntries end: 1 send (0 0 0) and log[1] to 2!
+2022/05/05 14:09:36 Success! leader 1 to 2
+2022/05/05 14:09:36 AppendEntries end: 1 send (0 0 0) and log[1] to 0!
+2022/05/05 14:09:36 Leader 1 applys log 1 !
+2022/05/05 14:09:36 Success! leader 1 to 0
+2022/05/05 14:09:36 0 will sleep 402.045982ms!
+2022/05/05 14:09:36 HeartBeat begin: 1 send (1 1 1) to 2!
+2022/05/05 14:09:36 HeartBeat begin: 1 send (1 1 1) to 0!
+2022/05/05 14:09:36 0 applys log 1!
+2022/05/05 14:09:36 2 applys log 1!
+2022/05/05 14:09:36 HeartBeat end: 1 send (1 1 1) to 0!
+2022/05/05 14:09:36 Success! leader 1 to 0
+2022/05/05 14:09:36 HeartBeat end: 1 send (1 1 1) to 2!
+2022/05/05 14:09:36 Success! leader 1 to 2
+2022/05/05 14:09:36 Leader 1 add log 2
+2022/05/05 14:09:36 AppendEntries begin: 1 send (1 1 1) and log[2] to 2!
+2022/05/05 14:09:36 AppendEntries begin: 1 send (1 1 1) and log[2] to 0!
+2022/05/05 14:09:36 2 add log[2]
+2022/05/05 14:09:36 AppendEntries end: 1 send (1 1 1) and log[2] to 2!
+2022/05/05 14:09:36 Success! leader 1 to 2
+2022/05/05 14:09:36 Leader 1 applys log 2 !
+2022/05/05 14:09:36 0 add log[2]
+2022/05/05 14:09:36 AppendEntries end: 1 send (1 1 1) and log[2] to 0!
+2022/05/05 14:09:36 Success! leader 1 to 0
+2022/05/05 14:09:36 2 will sleep 478.916375ms!
+2022/05/05 14:09:37 HeartBeat begin: 1 send (2 1 2) to 2!
+2022/05/05 14:09:37 HeartBeat begin: 1 send (2 1 2) to 0!
+2022/05/05 14:09:37 0 applys log 2!
+2022/05/05 14:09:37 2 applys log 2!
+2022/05/05 14:09:37 HeartBeat end: 1 send (2 1 2) to 0!
+2022/05/05 14:09:37 Success! leader 1 to 0
+2022/05/05 14:09:37 HeartBeat end: 1 send (2 1 2) to 2!
+2022/05/05 14:09:37 Success! leader 1 to 2
+2022/05/05 14:09:37 Leader 1 add log 3
+2022/05/05 14:09:37 0 will sleep 622.984585ms!
+2022/05/05 14:09:37 AppendEntries begin: 1 send (2 1 2) and log[3] to 2!
+2022/05/05 14:09:37 2 add log[3]
+2022/05/05 14:09:37 AppendEntries end: 1 send (2 1 2) and log[3] to 2!
+2022/05/05 14:09:37 Success! leader 1 to 2
+2022/05/05 14:09:37 Leader 1 applys log 3 !
+2022/05/05 14:09:37 AppendEntries begin: 1 send (2 1 2) and log[3] to 0!
+2022/05/05 14:09:37 0 add log[3]
+2022/05/05 14:09:37 AppendEntries end: 1 send (2 1 2) and log[3] to 0!
+2022/05/05 14:09:37 Success! leader 1 to 0
+2022/05/05 14:09:37 HeartBeat begin: 1 send (3 1 3) to 2!
+2022/05/05 14:09:37 2 applys log 3!
+2022/05/05 14:09:37 HeartBeat begin: 1 send (3 1 3) to 0!
+2022/05/05 14:09:37 HeartBeat end: 1 send (3 1 3) to 2!
+2022/05/05 14:09:37 Success! leader 1 to 2
+2022/05/05 14:09:37 0 applys log 3!
+2022/05/05 14:09:37 HeartBeat end: 1 send (3 1 3) to 0!
+2022/05/05 14:09:37 Success! leader 1 to 0
+2022/05/05 14:09:37 Leader 1 add log 4
+2022/05/05 14:09:37 2 will sleep 534.572527ms!
+2022/05/05 14:09:37 AppendEntries begin: 1 send (3 1 3) and log[4] to 2!
+2022/05/05 14:09:37 AppendEntries begin: 1 send (3 1 3) and log[4] to 0!
+2022/05/05 14:09:37 2 add log[4]
+2022/05/05 14:09:37 0 add log[4]
+2022/05/05 14:09:37 AppendEntries end: 1 send (3 1 3) and log[4] to 2!
+2022/05/05 14:09:37 Success! leader 1 to 2
+2022/05/05 14:09:37 AppendEntries end: 1 send (3 1 3) and log[4] to 0!
+2022/05/05 14:09:37 Leader 1 applys log 4 !
+2022/05/05 14:09:37 Success! leader 1 to 0
+2022/05/05 14:09:37 HeartBeat begin: 1 send (4 1 4) to 2!
+2022/05/05 14:09:37 HeartBeat begin: 1 send (4 1 4) to 0!
+2022/05/05 14:09:37 2 applys log 4!
+2022/05/05 14:09:37 HeartBeat end: 1 send (4 1 4) to 2!
+2022/05/05 14:09:37 Success! leader 1 to 2
+2022/05/05 14:09:37 0 applys log 4!
+2022/05/05 14:09:37 HeartBeat end: 1 send (4 1 4) to 0!
+2022/05/05 14:09:37 Success! leader 1 to 0
+2022/05/05 14:09:37 Leader 1 add log 5
+2022/05/05 14:09:37 0 will sleep 582.28023ms!
+2022/05/05 14:09:37 AppendEntries begin: 1 send (4 1 4) and log[5] to 2!
+2022/05/05 14:09:37 AppendEntries begin: 1 send (4 1 4) and log[5] to 0!
+2022/05/05 14:09:37 2 add log[5]
+2022/05/05 14:09:37 0 add log[5]
+2022/05/05 14:09:37 AppendEntries end: 1 send (4 1 4) and log[5] to 2!
+2022/05/05 14:09:37 Success! leader 1 to 2
+2022/05/05 14:09:37 AppendEntries end: 1 send (4 1 4) and log[5] to 0!
+2022/05/05 14:09:37 Leader 1 applys log 5 !
+2022/05/05 14:09:37 Success! leader 1 to 0
+2022/05/05 14:09:37 2 will sleep 281.021302ms!
+2022/05/05 14:09:37 HeartBeat begin: 1 send (5 1 5) to 0!
+2022/05/05 14:09:37 HeartBeat begin: 1 send (5 1 5) to 2!
+2022/05/05 14:09:37 0 applys log 5!
+2022/05/05 14:09:37 HeartBeat end: 1 send (5 1 5) to 0!
+2022/05/05 14:09:37 Success! leader 1 to 0
+2022/05/05 14:09:37 2 applys log 5!
+2022/05/05 14:09:37 HeartBeat end: 1 send (5 1 5) to 2!
+2022/05/05 14:09:37 Success! leader 1 to 2
+2022/05/05 14:09:37 Leader 1 add log 6
+2022/05/05 14:09:38 AppendEntries begin: 1 send (5 1 5) and log[6] to 2!
+2022/05/05 14:09:38 AppendEntries begin: 1 send (5 1 5) and log[6] to 0!
+2022/05/05 14:09:38 2 add log[6]
+2022/05/05 14:09:38 AppendEntries end: 1 send (5 1 5) and log[6] to 2!
+2022/05/05 14:09:38 Success! leader 1 to 2
+2022/05/05 14:09:38 Leader 1 applys log 6 !
+2022/05/05 14:09:38 0 add log[6]
+2022/05/05 14:09:38 AppendEntries end: 1 send (5 1 5) and log[6] to 0!
+2022/05/05 14:09:38 Success! leader 1 to 0
+2022/05/05 14:09:38 2 will sleep 366.037383ms!
+2022/05/05 14:09:38 HeartBeat begin: 1 send (6 1 6) to 2!
+2022/05/05 14:09:38 HeartBeat begin: 1 send (6 1 6) to 0!
+2022/05/05 14:09:38 2 applys log 6!
+2022/05/05 14:09:38 0 applys log 6!
+2022/05/05 14:09:38 HeartBeat end: 1 send (6 1 6) to 2!
+2022/05/05 14:09:38 Success! leader 1 to 2
+2022/05/05 14:09:38 HeartBeat end: 1 send (6 1 6) to 0!
+2022/05/05 14:09:38 Success! leader 1 to 0
+2022/05/05 14:09:38 Leader 1 add log 7
+2022/05/05 14:09:38 0 will sleep 429.757363ms!
+2022/05/05 14:09:38 AppendEntries begin: 1 send (6 1 6) and log[7] to 2!
+2022/05/05 14:09:38 AppendEntries begin: 1 send (6 1 6) and log[7] to 0!
+2022/05/05 14:09:38 2 add log[7]
+2022/05/05 14:09:38 AppendEntries end: 1 send (6 1 6) and log[7] to 2!
+2022/05/05 14:09:38 Success! leader 1 to 2
+2022/05/05 14:09:38 Leader 1 applys log 7 !
+2022/05/05 14:09:38 0 add log[7]
+2022/05/05 14:09:38 AppendEntries end: 1 send (6 1 6) and log[7] to 0!
+2022/05/05 14:09:38 Success! leader 1 to 0
+2022/05/05 14:09:38 HeartBeat begin: 1 send (7 1 7) to 0!
+2022/05/05 14:09:38 HeartBeat begin: 1 send (7 1 7) to 2!
+2022/05/05 14:09:38 0 applys log 7!
+2022/05/05 14:09:38 2 applys log 7!
+2022/05/05 14:09:38 HeartBeat end: 1 send (7 1 7) to 0!
+2022/05/05 14:09:38 Success! leader 1 to 0
+2022/05/05 14:09:38 HeartBeat end: 1 send (7 1 7) to 2!
+2022/05/05 14:09:38 Success! leader 1 to 2
+2022/05/05 14:09:38 Leader 1 add log 8
+2022/05/05 14:09:38 2 will sleep 557.319764ms!
+2022/05/05 14:09:38 AppendEntries begin: 1 send (7 1 7) and log[8] to 2!
+2022/05/05 14:09:38 AppendEntries begin: 1 send (7 1 7) and log[8] to 0!
+2022/05/05 14:09:38 2 add log[8]
+2022/05/05 14:09:38 0 add log[8]
+2022/05/05 14:09:38 AppendEntries end: 1 send (7 1 7) and log[8] to 2!
+2022/05/05 14:09:38 Success! leader 1 to 2
+2022/05/05 14:09:38 Leader 1 applys log 8 !
+2022/05/05 14:09:38 AppendEntries end: 1 send (7 1 7) and log[8] to 0!
+2022/05/05 14:09:38 Success! leader 1 to 0
+2022/05/05 14:09:38 0 will sleep 580.252381ms!
+2022/05/05 14:09:38 HeartBeat begin: 1 send (8 1 8) to 2!
+2022/05/05 14:09:38 HeartBeat begin: 1 send (8 1 8) to 0!
+2022/05/05 14:09:38 2 applys log 8!
+2022/05/05 14:09:38 0 applys log 8!
+2022/05/05 14:09:38 HeartBeat end: 1 send (8 1 8) to 2!
+2022/05/05 14:09:38 Success! leader 1 to 2
+2022/05/05 14:09:38 HeartBeat end: 1 send (8 1 8) to 0!
+2022/05/05 14:09:38 Success! leader 1 to 0
+2022/05/05 14:09:38 Leader 1 add log 9
+2022/05/05 14:09:39 AppendEntries begin: 1 send (8 1 8) and log[9] to 0!
+2022/05/05 14:09:39 0 add log[9]
+2022/05/05 14:09:39 AppendEntries begin: 1 send (8 1 8) and log[9] to 2!
+2022/05/05 14:09:39 AppendEntries end: 1 send (8 1 8) and log[9] to 0!
+2022/05/05 14:09:39 Success! leader 1 to 0
+2022/05/05 14:09:39 Leader 1 applys log 9 !
+2022/05/05 14:09:39 2 add log[9]
+2022/05/05 14:09:39 AppendEntries end: 1 send (8 1 8) and log[9] to 2!
+2022/05/05 14:09:39 Success! leader 1 to 2
+2022/05/05 14:09:39 HeartBeat begin: 1 send (9 1 9) to 2!
+2022/05/05 14:09:39 HeartBeat begin: 1 send (9 1 9) to 0!
+2022/05/05 14:09:39 2 applys log 9!
+2022/05/05 14:09:39 0 applys log 9!
+2022/05/05 14:09:39 HeartBeat end: 1 send (9 1 9) to 2!
+2022/05/05 14:09:39 Success! leader 1 to 2
+2022/05/05 14:09:39 HeartBeat end: 1 send (9 1 9) to 0!
+2022/05/05 14:09:39 Success! leader 1 to 0
+2022/05/05 14:09:39 2 will sleep 662.220663ms!
+2022/05/05 14:09:39 Leader 1 add log 10
+2022/05/05 14:09:39 0 will sleep 414.158009ms!
+2022/05/05 14:09:39 AppendEntries begin: 1 send (9 1 9) and log[10] to 2!
+2022/05/05 14:09:39 AppendEntries begin: 1 send (9 1 9) and log[10] to 0!
+2022/05/05 14:09:39 2 add log[10]
+2022/05/05 14:09:39 AppendEntries end: 1 send (9 1 9) and log[10] to 2!
+2022/05/05 14:09:39 Success! leader 1 to 2
+2022/05/05 14:09:39 Leader 1 applys log 10 !
+2022/05/05 14:09:39 0 add log[10]
+2022/05/05 14:09:39 AppendEntries end: 1 send (9 1 9) and log[10] to 0!
+2022/05/05 14:09:39 Success! leader 1 to 0
+2022/05/05 14:09:39 HeartBeat begin: 1 send (10 1 10) to 2!
+2022/05/05 14:09:39 HeartBeat begin: 1 send (10 1 10) to 0!
+2022/05/05 14:09:39 2 applys log 10!
+2022/05/05 14:09:39 HeartBeat end: 1 send (10 1 10) to 2!
+2022/05/05 14:09:39 Success! leader 1 to 2
+2022/05/05 14:09:39 0 applys log 10!
+2022/05/05 14:09:39 HeartBeat end: 1 send (10 1 10) to 0!
+2022/05/05 14:09:39 Success! leader 1 to 0
+2022/05/05 14:09:39 Leader 1 add log 11
+2022/05/05 14:09:39 AppendEntries begin: 1 send (10 1 10) and log[11] to 2!
+2022/05/05 14:09:39 AppendEntries begin: 1 send (10 1 10) and log[11] to 0!
+2022/05/05 14:09:39 0 add log[11]
+2022/05/05 14:09:39 2 add log[11]
+2022/05/05 14:09:39 AppendEntries end: 1 send (10 1 10) and log[11] to 2!
+2022/05/05 14:09:39 Success! leader 1 to 2
+2022/05/05 14:09:39 Leader 1 applys log 11 !
+2022/05/05 14:09:39 AppendEntries end: 1 send (10 1 10) and log[11] to 0!
+2022/05/05 14:09:39 Success! leader 1 to 0
+2022/05/05 14:09:39 0 will sleep 416.375316ms!
+2022/05/05 14:09:39 HeartBeat begin: 1 send (11 1 11) to 2!
+2022/05/05 14:09:39 HeartBeat begin: 1 send (11 1 11) to 0!
+2022/05/05 14:09:39 2 applys log 11!
+2022/05/05 14:09:39 HeartBeat end: 1 send (11 1 11) to 2!
+2022/05/05 14:09:39 Success! leader 1 to 2
+2022/05/05 14:09:39 0 applys log 11!
+2022/05/05 14:09:39 HeartBeat end: 1 send (11 1 11) to 0!
+2022/05/05 14:09:39 Success! leader 1 to 0
+  ... Passed --   3.8  3   48  116738   11
+Test (2B): agreement despite follower disconnection ...
+2022/05/05 14:09:39 0 will sleep 592.917408ms!
+2022/05/05 14:09:39 2 will sleep 407.935122ms!
+2022/05/05 14:09:39 1 will sleep 463.887631ms!
+2022/05/05 14:09:40 2 election timeout!
+2022/05/05 14:09:40 2 will sleep 640.884319ms!
+2022/05/05 14:09:40 Requestvote begin: 2 to 1!
+2022/05/05 14:09:40 Requestvote begin: 2 to 0!
+2022/05/05 14:09:40 Requestvote end: 2 to 1 and time is 216.443µs!
+2022/05/05 14:09:40 Requestvote end: 2 to 0 and time is 154.716µs!
+2022/05/05 14:09:40 2 wins the vote from 1!
+2022/05/05 14:09:40 2 becomes leader in term 1!
+
+2022/05/05 14:09:40 HeartBeat begin: 2 send (0 0 0) to 1!
+2022/05/05 14:09:40 HeartBeat end: 2 send (0 0 0) to 1!
+2022/05/05 14:09:40 Success! leader 2 to 1
+2022/05/05 14:09:40 HeartBeat begin: 2 send (0 0 0) to 0!
+2022/05/05 14:09:40 HeartBeat end: 2 send (0 0 0) to 0!
+2022/05/05 14:09:40 Success! leader 2 to 0
+2022/05/05 14:09:40 Leader 2 add log 1
+2022/05/05 14:09:40 1 will sleep 402.644555ms!
+2022/05/05 14:09:40 AppendEntries begin: 2 send (0 0 0) and log[1] to 0!
+2022/05/05 14:09:40 AppendEntries begin: 2 send (0 0 0) and log[1] to 1!
+2022/05/05 14:09:40 0 add log[1]
+2022/05/05 14:09:40 1 add log[1]
+2022/05/05 14:09:40 AppendEntries end: 2 send (0 0 0) and log[1] to 1!
+2022/05/05 14:09:40 Success! leader 2 to 1
+2022/05/05 14:09:40 Leader 2 applys log 1 !
+2022/05/05 14:09:40 AppendEntries end: 2 send (0 0 0) and log[1] to 0!
+2022/05/05 14:09:40 Success! leader 2 to 0
+2022/05/05 14:09:40 0 will sleep 594.888622ms!
+2022/05/05 14:09:40 HeartBeat begin: 2 send (1 1 1) to 1!
+2022/05/05 14:09:40 HeartBeat begin: 2 send (1 1 1) to 0!
+2022/05/05 14:09:40 1 applys log 1!
+2022/05/05 14:09:40 0 applys log 1!
+2022/05/05 14:09:40 HeartBeat end: 2 send (1 1 1) to 1!
+2022/05/05 14:09:40 Success! leader 2 to 1
+2022/05/05 14:09:40 HeartBeat end: 2 send (1 1 1) to 0!
+2022/05/05 14:09:40 Success! leader 2 to 0
+2022/05/05 14:09:40 HeartBeat begin: 2 send (1 1 1) to 1!
+2022/05/05 14:09:40 HeartBeat begin: 2 send (1 1 1) to 0!
+2022/05/05 14:09:40 HeartBeat end: 2 send (1 1 1) to 0!
+2022/05/05 14:09:40 Success! leader 2 to 0
+2022/05/05 14:09:40 HeartBeat end: 2 send (1 1 1) to 1!
+2022/05/05 14:09:40 Success! leader 2 to 1
+2022/05/05 14:09:40 1 will sleep 608.974101ms!
+2022/05/05 14:09:40 HeartBeat begin: 2 send (1 1 1) to 1!
+2022/05/05 14:09:40 HeartBeat begin: 2 send (1 1 1) to 0!
+2022/05/05 14:09:40 HeartBeat end: 2 send (1 1 1) to 1!
+2022/05/05 14:09:40 Success! leader 2 to 1
+2022/05/05 14:09:40 HeartBeat end: 2 send (1 1 1) to 0!
+2022/05/05 14:09:40 Success! leader 2 to 0
+2022/05/05 14:09:40 HeartBeat begin: 2 send (1 1 1) to 1!
+2022/05/05 14:09:40 HeartBeat begin: 2 send (1 1 1) to 0!
+2022/05/05 14:09:40 HeartBeat end: 2 send (1 1 1) to 0!
+2022/05/05 14:09:40 Success! leader 2 to 0
+2022/05/05 14:09:40 HeartBeat end: 2 send (1 1 1) to 1!
+2022/05/05 14:09:40 Success! leader 2 to 1
+2022/05/05 14:09:40 0 will sleep 648.719377ms!
+2022/05/05 14:09:41 Leader 2 add log 2
+2022/05/05 14:09:41 AppendEntries begin: 2 send (1 1 1) and log[2] to 1!
+2022/05/05 14:09:41 AppendEntries begin: 2 send (1 1 1) and log[2] to 0!
+2022/05/05 14:09:41 1 add log[2]
+2022/05/05 14:09:41 AppendEntries end: 2 send (1 1 1) and log[2] to 1!
+2022/05/05 14:09:41 Success! leader 2 to 1
+2022/05/05 14:09:41 Leader 2 applys log 2 !
+2022/05/05 14:09:41 HeartBeat begin: 2 send (2 1 2) to 1!
+2022/05/05 14:09:41 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:41 1 applys log 2!
+2022/05/05 14:09:41 HeartBeat end: 2 send (2 1 2) to 1!
+2022/05/05 14:09:41 Success! leader 2 to 1
+2022/05/05 14:09:41 Leader 2 add log 3
+2022/05/05 14:09:41 1 will sleep 648.691828ms!
+2022/05/05 14:09:41 AppendEntries begin: 2 send (2 1 2) and log[3] to 1!
+2022/05/05 14:09:41 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:41 1 add log[3]
+2022/05/05 14:09:41 AppendEntries end: 2 send (2 1 2) and log[3] to 1!
+2022/05/05 14:09:41 Success! leader 2 to 1
+2022/05/05 14:09:41 Leader 2 applys log 3 !
+2022/05/05 14:09:41 HeartBeat begin: 2 send (3 1 3) to 1!
+2022/05/05 14:09:41 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:41 1 applys log 3!
+2022/05/05 14:09:41 HeartBeat end: 2 send (3 1 3) to 1!
+2022/05/05 14:09:41 Success! leader 2 to 1
+2022/05/05 14:09:41 0 election timeout!
+2022/05/05 14:09:41 Requestvote begin: 0 to 2!
+2022/05/05 14:09:41 0 will sleep 691.874741ms!
+2022/05/05 14:09:41 Requestvote begin: 0 to 1!
+2022/05/05 14:09:41 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:41 AppendEntriesRPC return false!
+2022/05/05 14:09:41 HeartBeat begin: 2 send (3 1 3) to 1!
+2022/05/05 14:09:41 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:41 HeartBeat end: 2 send (3 1 3) to 1!
+2022/05/05 14:09:41 Success! leader 2 to 1
+2022/05/05 14:09:41 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:41 AppendEntriesRPC return false!
+2022/05/05 14:09:41 Requestvote begin: 0 to 2!
+2022/05/05 14:09:41 Requestvote begin: 0 to 1!
+2022/05/05 14:09:41 HeartBeat begin: 2 send (3 1 3) to 1!
+2022/05/05 14:09:41 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:41 HeartBeat end: 2 send (3 1 3) to 1!
+2022/05/05 14:09:41 Success! leader 2 to 1
+2022/05/05 14:09:41 1 will sleep 558.240637ms!
+2022/05/05 14:09:41 Requestvote begin: 0 to 2!
+2022/05/05 14:09:41 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 HeartBeat begin: 2 send (3 1 3) to 1!
+2022/05/05 14:09:42 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:42 HeartBeat end: 2 send (3 1 3) to 1!
+2022/05/05 14:09:42 Success! leader 2 to 1
+2022/05/05 14:09:42 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:42 AppendEntriesRPC return false!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 HeartBeat begin: 2 send (3 1 3) to 1!
+2022/05/05 14:09:42 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:42 HeartBeat end: 2 send (3 1 3) to 1!
+2022/05/05 14:09:42 Success! leader 2 to 1
+2022/05/05 14:09:42 Requestvote end: 0 to 1 and time is 126.171289ms!
+2022/05/05 14:09:42 Requestvote return false: 0 to 1!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 HeartBeat begin: 2 send (3 1 3) to 1!
+2022/05/05 14:09:42 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:42 HeartBeat end: 2 send (3 1 3) to 1!
+2022/05/05 14:09:42 Success! leader 2 to 1
+2022/05/05 14:09:42 0 election timeout!
+2022/05/05 14:09:42 0 will sleep 679.925798ms!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:42 HeartBeat begin: 2 send (3 1 3) to 1!
+2022/05/05 14:09:42 HeartBeat end: 2 send (3 1 3) to 1!
+2022/05/05 14:09:42 Success! leader 2 to 1
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 1 will sleep 418.482533ms!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 Leader 2 add log 4
+2022/05/05 14:09:42 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:42 AppendEntries begin: 2 send (3 1 3) and log[4] to 1!
+2022/05/05 14:09:42 1 add log[4]
+2022/05/05 14:09:42 AppendEntries end: 2 send (3 1 3) and log[4] to 1!
+2022/05/05 14:09:42 Success! leader 2 to 1
+2022/05/05 14:09:42 Leader 2 applys log 4 !
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 Requestvote end: 0 to 1 and time is 56.297282ms!
+2022/05/05 14:09:42 Requestvote return false: 0 to 1!
+2022/05/05 14:09:42 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:42 HeartBeat begin: 2 send (4 1 4) to 1!
+2022/05/05 14:09:42 1 applys log 4!
+2022/05/05 14:09:42 HeartBeat end: 2 send (4 1 4) to 1!
+2022/05/05 14:09:42 Success! leader 2 to 1
+2022/05/05 14:09:42 Leader 2 add log 5
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 AppendEntries end: 2 send (1 1 1) and log[2] to 0!
+2022/05/05 14:09:42 AppendEntriesRPC return false!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 1 will sleep 453.977832ms!
+2022/05/05 14:09:42 AppendEntries begin: 2 send (4 1 4) and log[5] to 1!
+2022/05/05 14:09:42 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:42 1 add log[5]
+2022/05/05 14:09:42 AppendEntries end: 2 send (4 1 4) and log[5] to 1!
+2022/05/05 14:09:42 Success! leader 2 to 1
+2022/05/05 14:09:42 Leader 2 applys log 5 !
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:42 Requestvote begin: 0 to 2!
+2022/05/05 14:09:42 Requestvote begin: 0 to 1!
+2022/05/05 14:09:43 0 election timeout!
+2022/05/05 14:09:43 0 will sleep 423.930307ms!
+2022/05/05 14:09:43 Requestvote begin: 0 to 2!
+2022/05/05 14:09:43 Requestvote begin: 0 to 1!
+2022/05/05 14:09:43 Requestvote end: 0 to 2 and time is 66.274596ms!
+2022/05/05 14:09:43 Requestvote return false: 0 to 2!
+2022/05/05 14:09:43 HeartBeat begin: 2 send (5 1 5) to 1!
+2022/05/05 14:09:43 Requestvote end: 0 to 2 and time is 974.187596ms!
+2022/05/05 14:09:43 Requestvote return false: 0 to 2!
+2022/05/05 14:09:43 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:43 1 applys log 5!
+2022/05/05 14:09:43 HeartBeat end: 2 send (5 1 5) to 1!
+2022/05/05 14:09:43 Success! leader 2 to 1
+2022/05/05 14:09:43 Requestvote begin: 0 to 2!
+2022/05/05 14:09:43 Requestvote begin: 0 to 1!
+2022/05/05 14:09:43 Leader 2 add log 6
+2022/05/05 14:09:43 Requestvote begin: 0 to 2!
+2022/05/05 14:09:43 Requestvote begin: 0 to 1!
+2022/05/05 14:09:43 Requestvote end: 0 to 2 and time is 171.317µs!
+2022/05/05 14:09:43 0 loses the vote from 2!
+2022/05/05 14:09:43 Requestvote end: 0 to 1 and time is 123.005µs!
+2022/05/05 14:09:43 0 loses the vote from 1!
+2022/05/05 14:09:43 Requestvote end: 0 to 2 and time is 525.161402ms!
+2022/05/05 14:09:43 Requestvote return false: 0 to 2!
+2022/05/05 14:09:43 AppendEntries begin: 2 send (5 1 5) and log[6] to 1!
+2022/05/05 14:09:43 AppendEntries begin: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:43 1 add log[6]
+2022/05/05 14:09:43 AppendEntries end: 2 send (5 1 5) and log[6] to 1!
+2022/05/05 14:09:43 Success! leader 2 to 1
+2022/05/05 14:09:43 Leader 2 applys log 6 !
+2022/05/05 14:09:43 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:43 2 become follower
+2022/05/05 14:09:43 Requestvote end: 0 to 2 and time is 447.154658ms!
+2022/05/05 14:09:43 Requestvote return false: 0 to 2!
+2022/05/05 14:09:43 2 will sleep 388.953602ms!
+2022/05/05 14:09:43 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:43 AppendEntriesRPC return false!
+2022/05/05 14:09:43 Requestvote end: 0 to 1 and time is 1.704155982s!
+2022/05/05 14:09:43 Requestvote return false: 0 to 1!
+2022/05/05 14:09:43 1 will sleep 491.397983ms!
+2022/05/05 14:09:43 0 election timeout!
+2022/05/05 14:09:43 0 will sleep 413.900209ms!
+2022/05/05 14:09:43 Requestvote begin: 0 to 2!
+2022/05/05 14:09:43 Requestvote begin: 0 to 1!
+2022/05/05 14:09:43 Requestvote end: 0 to 1 and time is 207.746µs!
+2022/05/05 14:09:43 0 loses the vote from 1!
+2022/05/05 14:09:43 Requestvote end: 0 to 2 and time is 289.252µs!
+2022/05/05 14:09:43 0 loses the vote from 2!
+2022/05/05 14:09:43 Requestvote end: 0 to 2 and time is 1.850241333s!
+2022/05/05 14:09:43 Requestvote return false: 0 to 2!
+2022/05/05 14:09:43 Requestvote end: 0 to 1 and time is 1.00359756s!
+2022/05/05 14:09:43 Requestvote return false: 0 to 1!
+2022/05/05 14:09:43 2 election timeout!
+2022/05/05 14:09:43 Requestvote begin: 2 to 1!
+2022/05/05 14:09:43 Requestvote begin: 2 to 0!
+2022/05/05 14:09:43 2 will sleep 586.764456ms!
+2022/05/05 14:09:43 Requestvote end: 2 to 1 and time is 236.421µs!
+2022/05/05 14:09:43 2 wins the vote from 1!
+2022/05/05 14:09:43 2 becomes leader in term 5!
+
+2022/05/05 14:09:43 HeartBeat begin: 2 send (6 1 6) to 1!
+2022/05/05 14:09:43 Requestvote end: 2 to 0 and time is 146.199µs!
+2022/05/05 14:09:43 HeartBeat begin: 2 send (6 1 6) to 0!
+2022/05/05 14:09:43 1 applys log 6!
+2022/05/05 14:09:43 HeartBeat end: 2 send (6 1 6) to 1!
+2022/05/05 14:09:43 Success! leader 2 to 1
+2022/05/05 14:09:43 HeartBeat end: 2 send (6 1 6) to 0!
+2022/05/05 14:09:43 Rollback! leader 2 to 0
+2022/05/05 14:09:43 Requestvote end: 0 to 2 and time is 884.187512ms!
+2022/05/05 14:09:43 Requestvote return false: 0 to 2!
+2022/05/05 14:09:43 1 will sleep 490.064676ms!
+2022/05/05 14:09:43 0 will sleep 469.023203ms!
+2022/05/05 14:09:44 Requestvote end: 0 to 1 and time is 1.823190096s!
+2022/05/05 14:09:44 Requestvote return false: 0 to 1!
+2022/05/05 14:09:44 0 election timeout!
+2022/05/05 14:09:44 0 will sleep 580.915794ms!
+2022/05/05 14:09:44 Requestvote begin: 0 to 1!
+2022/05/05 14:09:44 Requestvote begin: 0 to 2!
+2022/05/05 14:09:44 Requestvote end: 0 to 1 and time is 146.47µs!
+2022/05/05 14:09:44 0 loses the vote from 1!
+2022/05/05 14:09:44 1 election timeout!
+2022/05/05 14:09:44 Requestvote begin: 1 to 2!
+2022/05/05 14:09:44 1 will sleep 438.910975ms!
+2022/05/05 14:09:44 Requestvote begin: 1 to 0!
+2022/05/05 14:09:44 Requestvote end: 1 to 0 and time is 146.761µs!
+2022/05/05 14:09:44 1 loses the vote from 0!
+2022/05/05 14:09:44 Requestvote end: 0 to 1 and time is 1.431216527s!
+2022/05/05 14:09:44 Requestvote return false: 0 to 1!
+2022/05/05 14:09:44 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:44 AppendEntriesRPC return false!
+2022/05/05 14:09:44 Requestvote end: 0 to 1 and time is 1.528135556s!
+2022/05/05 14:09:44 Requestvote return false: 0 to 1!
+2022/05/05 14:09:44 Requestvote begin: 0 to 2!
+2022/05/05 14:09:44 Requestvote begin: 1 to 2!
+2022/05/05 14:09:44 Requestvote begin: 0 to 2!
+2022/05/05 14:09:44 Requestvote begin: 1 to 2!
+2022/05/05 14:09:44 Requestvote begin: 0 to 2!
+2022/05/05 14:09:44 1 election timeout!
+2022/05/05 14:09:44 1 will sleep 576.923063ms!
+2022/05/05 14:09:44 Requestvote begin: 1 to 2!
+2022/05/05 14:09:44 Requestvote begin: 1 to 0!
+2022/05/05 14:09:44 Requestvote end: 1 to 0 and time is 223.546µs!
+2022/05/05 14:09:44 1 wins the vote from 0!
+2022/05/05 14:09:44 1 becomes leader in term 7!
+
+2022/05/05 14:09:44 HeartBeat begin: 1 send (6 1 6) to 2!
+2022/05/05 14:09:44 HeartBeat begin: 1 send (6 1 6) to 0!
+2022/05/05 14:09:44 HeartBeat end: 1 send (6 1 6) to 0!
+2022/05/05 14:09:44 Rollback! leader 1 to 0
+2022/05/05 14:09:44 0 will sleep 440.671688ms!
+2022/05/05 14:09:45 Requestvote end: 0 to 2 and time is 2.687244321s!
+2022/05/05 14:09:45 Requestvote return false: 0 to 2!
+2022/05/05 14:09:45 Requestvote end: 0 to 2 and time is 2.601265962s!
+2022/05/05 14:09:45 Requestvote return false: 0 to 2!
+2022/05/05 14:09:45 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:45 AppendEntriesRPC return false!
+2022/05/05 14:09:45 Requestvote end: 0 to 1 and time is 2.196145649s!
+2022/05/05 14:09:45 Requestvote return false: 0 to 1!
+2022/05/05 14:09:45 Requestvote end: 0 to 2 and time is 2.492741049s!
+2022/05/05 14:09:45 Requestvote return false: 0 to 2!
+2022/05/05 14:09:45 0 election timeout!
+2022/05/05 14:09:45 Requestvote begin: 0 to 2!
+2022/05/05 14:09:45 0 will sleep 641.86398ms!
+2022/05/05 14:09:45 Requestvote begin: 0 to 1!
+2022/05/05 14:09:45 Requestvote begin: 0 to 2!
+2022/05/05 14:09:45 Requestvote begin: 0 to 1!
+2022/05/05 14:09:45 Requestvote begin: 0 to 2!
+2022/05/05 14:09:45 Requestvote begin: 0 to 1!
+2022/05/05 14:09:45 Requestvote end: 0 to 2 and time is 2.956286126s!
+2022/05/05 14:09:45 Requestvote return false: 0 to 2!
+2022/05/05 14:09:45 Requestvote begin: 0 to 2!
+2022/05/05 14:09:45 Requestvote begin: 0 to 1!
+2022/05/05 14:09:45 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:45 AppendEntriesRPC return false!
+2022/05/05 14:09:45 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:45 AppendEntriesRPC return false!
+2022/05/05 14:09:45 Requestvote begin: 0 to 2!
+2022/05/05 14:09:45 Requestvote begin: 0 to 1!
+2022/05/05 14:09:45 0 election timeout!
+2022/05/05 14:09:45 0 will sleep 680.915338ms!
+2022/05/05 14:09:45 Requestvote begin: 0 to 2!
+2022/05/05 14:09:45 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote end: 0 to 2 and time is 4.308207009s!
+2022/05/05 14:09:46 Requestvote return false: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote end: 0 to 2 and time is 4.055259627s!
+2022/05/05 14:09:46 Requestvote return false: 0 to 2!
+2022/05/05 14:09:46 Requestvote end: 0 to 2 and time is 4.437178056s!
+2022/05/05 14:09:46 Requestvote return false: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote end: 0 to 2 and time is 3.418216967s!
+2022/05/05 14:09:46 Requestvote return false: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 0 election timeout!
+2022/05/05 14:09:46 0 will sleep 446.899989ms!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote end: 0 to 1 and time is 3.613214261s!
+2022/05/05 14:09:46 Requestvote return false: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:46 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:46 AppendEntriesRPC return false!
+2022/05/05 14:09:46 Requestvote begin: 0 to 2!
+2022/05/05 14:09:46 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 0 election timeout!
+2022/05/05 14:09:47 0 will sleep 572.930116ms!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote end: 0 to 1 and time is 4.855130241s!
+2022/05/05 14:09:47 Requestvote return false: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote end: 0 to 1 and time is 5.64228534s!
+2022/05/05 14:09:47 Requestvote return false: 0 to 1!
+2022/05/05 14:09:47 Requestvote end: 0 to 1 and time is 4.804187473s!
+2022/05/05 14:09:47 Requestvote return false: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 0 election timeout!
+2022/05/05 14:09:47 0 will sleep 449.928053ms!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote end: 0 to 2 and time is 5.315157985s!
+2022/05/05 14:09:47 Requestvote return false: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:47 Requestvote end: 0 to 1 and time is 6.191211636s!
+2022/05/05 14:09:47 Requestvote return false: 0 to 1!
+2022/05/05 14:09:47 Requestvote begin: 0 to 2!
+2022/05/05 14:09:47 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 0 election timeout!
+2022/05/05 14:09:48 0 will sleep 557.83741ms!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:48 AppendEntriesRPC return false!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 AppendEntries end: 2 send (1 1 2) and log[2] to 0!
+2022/05/05 14:09:48 AppendEntriesRPC return false!
+2022/05/05 14:09:48 Requestvote end: 0 to 1 and time is 5.92325601s!
+2022/05/05 14:09:48 Requestvote return false: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote end: 0 to 2 and time is 5.364178067s!
+2022/05/05 14:09:48 Requestvote return false: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote end: 0 to 1 and time is 6.034166083s!
+2022/05/05 14:09:48 Requestvote return false: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+2022/05/05 14:09:48 Requestvote begin: 0 to 2!
+2022/05/05 14:09:48 Requestvote begin: 0 to 1!
+signal: interrupt
+FAIL	_/home/ywj/6.824/src/raft	14.110s
