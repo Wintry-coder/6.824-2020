@@ -55,17 +55,13 @@ type LogEntry struct {
 	Msg   ApplyMsg
 }
 
-type LogState struct {
-	Commit  	 bool
-	SuccessCount int
-}
-
 const (
 	Follower string = "follower"
 	Candidate string = "canditate"
 	Leader string = "leader"
 	DefaultElectionTimeout int = 400
 	DefaultHeartBeatTimeout int = 150
+	MultLogs bool = true
 )
 //
 // A Go object implementing a single Raft peer.
@@ -86,7 +82,7 @@ type Raft struct {
 
 	//2B
 	logs 		[]LogEntry
-	logstates	[]LogState
+	logstates	[]int
 	commitIndex int		// initialized to 0
 	lastApplied int		// initialized to 0
 	nextIndex 	[]int	// initialized to 1
@@ -175,8 +171,9 @@ type RequestVoteReply struct {
 }
 
 /*
- * 只有成功投票才会重置定时器
+ * 只有成功投票和失败投票时Leader变回Follower会重置定时器
  * 防止拥有过期日志的candidate反复超时，而拥有新日志的follower不超时
+ * Term变大意味着开始下一个任期，必重置定时器
  */
 func (rf *Raft) RequestVoteRPC(args *RequestVoteArgs, reply *RequestVoteReply) {
 	argLogIndex := args.LastLogIndex
@@ -203,6 +200,14 @@ func (rf *Raft) RequestVoteRPC(args *RequestVoteArgs, reply *RequestVoteReply) {
 		rf.state = Follower
 	} else {
 		reply.VoteGranted = false
+		if args.Term > rf.currentTerm {
+			rf.currentTerm = args.Term
+			rf.voteFor = -1
+			if rf.state == Leader {
+				rf.lastReceive = time.Now()
+			}
+			rf.state = Follower
+		}
 	}
 	rf.mu.Unlock()
 }
@@ -211,6 +216,7 @@ func (rf *Raft) RequestVoteRPC(args *RequestVoteArgs, reply *RequestVoteReply) {
  * Term >= currentTerm 就会重置定时器，因为本来就有心跳包的作用
  */
 func (rf *Raft) AppendEntriesRPC(args *AppendEntriesArgs, reply *AppendEntriesReply) {
+	isFastBackup := true
 	rf.mu.Lock() 
 	defer rf.mu.Unlock()
 	reply.Term = rf.currentTerm
@@ -234,15 +240,24 @@ func (rf *Raft) AppendEntriesRPC(args *AppendEntriesArgs, reply *AppendEntriesRe
 		if isLogMatch {
 			reply.Success = true
 			if !args.IsHeartBeat {
-				newLog := args.Logs[0]
-				newLogState := LogState{}
-				if len(rf.logs) > args.PrevLogIndex + 1 {
-					rf.logs[args.PrevLogIndex + 1] = newLog 
-					rf.logstates[args.PrevLogIndex + 1] = newLogState
+				if isFastBackup {
+					oldLogs := rf.logs[0 : args.PrevLogIndex + 1]
+					rf.logs = append(oldLogs, args.Logs...)
+					for i:=0; i < len(args.Logs); i++ {
+						DPrintf("%v add log[%v]\n", rf.me, args.PrevLogIndex + 1 + i)
+						rf.logstates = append(rf.logstates, 1)
+					}
 				} else {
-					rf.logs = append(rf.logs, newLog)
-					rf.logstates = append(rf.logstates, newLogState)
-					DPrintf("%v add log[%v]\n", rf.me, args.PrevLogIndex + 1)
+					newLog := args.Logs[0]
+					newLogState := 1
+					if len(rf.logs) > args.PrevLogIndex + 1 {
+						rf.logs[args.PrevLogIndex + 1] = newLog 
+						rf.logstates[args.PrevLogIndex + 1] = newLogState
+					} else {
+						rf.logs = append(rf.logs, newLog)
+						rf.logstates = append(rf.logstates, newLogState)
+						DPrintf("%v add log[%v]\n", rf.me, args.PrevLogIndex + 1)
+					}
 				}
 			}
 			if args.LeaderCommit > rf.commitIndex {
@@ -340,10 +355,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 			Index : index,
 			Msg : msg,
 		}
-		newLogState := LogState {
-			Commit : false,
-			SuccessCount : 1,
-		}
+		newLogState := 1
 		rf.logs = append(rf.logs, newLog)
 		rf.logstates = append(rf.logstates, newLogState)
 		DPrintf("Leader %v add log %v\n", rf.me, index)
@@ -404,10 +416,12 @@ func (rf *Raft) AppendEntries(x int) {
 		// 比如follower后面的log都是错误的，而当前只重写了一个log。
 		// 很大的leaderCommit会导致follower错误提交后续的log。
 		// 所以leaderCommit最大只能是当前log的index值，用于让follower复制完成后立马提交该log。
-		// TODO:
-		if leaderCommit > nextIndex {
-			leaderCommit = nextIndex
+		if !MultLogs {
+			if leaderCommit > nextIndex {
+				leaderCommit = nextIndex
+			}
 		}
+
 
 		args := AppendEntriesArgs {
 			Term : currentTerm,
@@ -420,9 +434,15 @@ func (rf *Raft) AppendEntries(x int) {
 			args.IsHeartBeat = true
 		} else {
 			args.IsHeartBeat = false
-			args.Logs = append(args.Logs, rf.logs[nextIndex])
+			if MultLogs {
+				args.Logs = rf.logs[nextIndex : ]
+			} else {
+				args.Logs = append(args.Logs, rf.logs[nextIndex])
+			}
 		}
 		reply := AppendEntriesReply{}
+		sendLogLen := len(rf.logs) - nextIndex
+
 		rf.mu.Unlock()	
 
 		if args.IsHeartBeat {
@@ -448,11 +468,11 @@ func (rf *Raft) AppendEntries(x int) {
 		}
 
 		rf.mu.Lock()
-		defer rf.mu.Unlock()	
 
 		isLeader = rf.state == Leader
 		if !isLeader || currentTerm != rf.currentTerm {
 			DPrintf("%v is not leader or term changed\n", rf.me)
+			rf.mu.Unlock()	
 			return
 		}		
 
@@ -462,32 +482,54 @@ func (rf *Raft) AppendEntries(x int) {
 			rf.voteFor = -1
 			rf.lastReceive = time.Now() 
 			DPrintf("%v become follower\n", rf.me)
+			rf.mu.Unlock()	
 			return
 		} 
 
 		if reply.Success {
 			DPrintf("Success! leader %v to %v\n", rf.me, x)
 			if !args.IsHeartBeat {
-				rf.matchIndex[x] = rf.nextIndex[x]
-				rf.nextIndex[x]++
-				successLogIndex := rf.matchIndex[x]
-				if rf.logs[successLogIndex].Term == rf.currentTerm {
-					//当前Term的log可以直接根据计数提交，无视乱序接受RPC响应
-					rf.logstates[successLogIndex].SuccessCount++
-					if rf.logstates[successLogIndex].SuccessCount * 2 > len(rf.peers) {
-						rf.logstates[successLogIndex].Commit = true
-						rf.commitIndex = rf.logs[successLogIndex].Index
-						//循环应用之前未应用的log，旧的Term在此处间接提交
-						for rf.lastApplied < rf.commitIndex {
-							rf.lastApplied++
-							rf.applyCh <- rf.logs[rf.lastApplied].Msg
-							DPrintf("Leader %v applys log %v !\n", rf.me, rf.lastApplied)
+				if MultLogs {
+					successLogIndex := rf.matchIndex[x] + 1
+					rf.matchIndex[x] = nextIndex + sendLogLen - 1
+					rf.nextIndex[x] = rf.matchIndex[x] + 1
+					
+					for successLogIndex <= rf.matchIndex[x] {
+						if rf.logs[successLogIndex].Term == rf.currentTerm {
+							rf.logstates[successLogIndex]++
+							if rf.logstates[successLogIndex] * 2 > len(rf.peers) {
+								rf.commitIndex = rf.logs[successLogIndex].Index
+								for rf.lastApplied < rf.commitIndex {
+									rf.lastApplied++
+									rf.applyCh <- rf.logs[rf.lastApplied].Msg
+									DPrintf("Leader %v applys log %v !\n", rf.me, rf.lastApplied)
+								}
+							}
+						}
+						successLogIndex++
+					}
+				} else {
+					rf.matchIndex[x] = rf.nextIndex[x]
+					rf.nextIndex[x]++
+					successLogIndex := rf.matchIndex[x]
+					if rf.logs[successLogIndex].Term == rf.currentTerm {
+						//当前Term的log可以直接根据计数提交，无视乱序接受RPC响应
+						rf.logstates[successLogIndex]++
+						if rf.logstates[successLogIndex] * 2 > len(rf.peers) {
+							rf.commitIndex = rf.logs[successLogIndex].Index
+							//循环应用之前未应用的log，旧的Term在此处间接提交
+							for rf.lastApplied < rf.commitIndex {
+								rf.lastApplied++
+								rf.applyCh <- rf.logs[rf.lastApplied].Msg
+								DPrintf("Leader %v applys log %v !\n", rf.me, rf.lastApplied)
+							}
 						}
 					}
 				}
 
 			}
 			if len(rf.logs) == rf.nextIndex[x] {
+				rf.mu.Unlock()	
 				return
 				//日志已经发完，下一个是心跳包
 			}			
@@ -495,6 +537,7 @@ func (rf *Raft) AppendEntries(x int) {
 			DPrintf("Rollback! leader %v to %v\n", rf.me, x)
 			rf.nextIndex[x]--
 		}		
+		rf.mu.Unlock()	
 	}
 }
 
@@ -504,7 +547,7 @@ func (rf *Raft) HeartBeat() {
 			return
 		}
 		_, isLeader := rf.GetState()
-		if !isLeader { 
+		if !isLeader{ 
 			return
 		}		
 
@@ -698,7 +741,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	//2A
 	rf.voteFor = -1
 	rf.state = Follower
-	rf.currentTerm = 0
+	rf.currentTerm = 1
 	rf.lastReceive = time.Now()
 	rf.voteGranted = make([]int, len(peers))
 	for i := 0; i < len(peers); i++ {
@@ -718,8 +761,8 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	nullLog := LogEntry{}
 	rf.logs = append(rf.logs, nullLog)
 
-	rf.logstates = []LogState{}
-	nullLogState := LogState{}
+	rf.logstates = []int{}
+	nullLogState := 0
 	rf.logstates = append(rf.logstates, nullLogState)
 	go rf.CheckElectionTimeout()
 
