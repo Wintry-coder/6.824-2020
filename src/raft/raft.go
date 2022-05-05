@@ -23,6 +23,7 @@ import "../labrpc"
 import "fmt"
 import "time"
 import "math/rand"
+import "log"
 
 // import "bytes"
 // import "../labgob"
@@ -61,7 +62,9 @@ const (
 	Leader string = "leader"
 	DefaultElectionTimeout int = 400
 	DefaultHeartBeatTimeout int = 150
-	MultLogs bool = true
+	//优化
+	MultLogs bool = true	// 一次携带多个log
+	FastBackup bool = true	// 快速定位
 )
 //
 // A Go object implementing a single Raft peer.
@@ -156,6 +159,9 @@ type AppendEntriesArgs struct {
 type AppendEntriesReply struct {
 	Term 	int
 	Success bool
+	XTerm	int
+	XIndex 	int
+	XLen	int
 }
 
 type RequestVoteArgs struct {
@@ -216,7 +222,6 @@ func (rf *Raft) RequestVoteRPC(args *RequestVoteArgs, reply *RequestVoteReply) {
  * Term >= currentTerm 就会重置定时器，因为本来就有心跳包的作用
  */
 func (rf *Raft) AppendEntriesRPC(args *AppendEntriesArgs, reply *AppendEntriesReply) {
-	isFastBackup := true
 	rf.mu.Lock() 
 	defer rf.mu.Unlock()
 	reply.Term = rf.currentTerm
@@ -240,7 +245,7 @@ func (rf *Raft) AppendEntriesRPC(args *AppendEntriesArgs, reply *AppendEntriesRe
 		if isLogMatch {
 			reply.Success = true
 			if !args.IsHeartBeat {
-				if isFastBackup {
+				if MultLogs {
 					oldLogs := rf.logs[0 : args.PrevLogIndex + 1]
 					rf.logs = append(oldLogs, args.Logs...)
 					for i:=0; i < len(args.Logs); i++ {
@@ -273,6 +278,21 @@ func (rf *Raft) AppendEntriesRPC(args *AppendEntriesArgs, reply *AppendEntriesRe
 			}
 		} else {
 			reply.Success = false
+			if FastBackup {
+				if len(rf.logs) - 1 >= args.PrevLogIndex {
+					reply.XTerm = rf.logs[args.PrevLogIndex].Term
+					for i := len(rf.logs) - 1; i >= 0; i--{
+						if rf.logs[i].Term != reply.XTerm {
+							break
+						}
+						reply.XIndex = rf.logs[i].Index
+					}
+				} else {
+					reply.XTerm = -1
+					reply.XLen = args.PrevLogIndex - len(rf.logs) + 1
+				}
+			}
+			
 		}	
 	}
 }
@@ -535,7 +555,32 @@ func (rf *Raft) AppendEntries(x int) {
 			}			
 		} else {
 			DPrintf("Rollback! leader %v to %v\n", rf.me, x)
-			rf.nextIndex[x]--
+			err_msg := ""
+			if FastBackup {
+				if reply.XTerm == -1 {
+					rf.nextIndex[x] -= reply.XLen
+				} else if reply.XTerm > 0 {
+					matchLogIndex := reply.XIndex
+					for i := 1; i <= len(rf.logs) - 1; i++ {
+						if rf.logs[i].Term == reply.Term {
+							matchLogIndex = rf.logs[i].Index
+							break
+						}
+					}
+					rf.nextIndex[x] = matchLogIndex
+				} else {
+					err_msg = "Reply.XTerm == 0"
+				}
+				if rf.nextIndex[x] < 1 {
+					err_msg = "rf.nextIndex[x] < 1"
+				}
+			} else {
+				rf.nextIndex[x]--
+			}
+			
+			if err_msg != "" {
+				log.Fatalf("Rollback error: %v\n", err_msg)
+			}
 		}		
 		rf.mu.Unlock()	
 	}
