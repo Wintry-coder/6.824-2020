@@ -549,6 +549,7 @@ loop:
 	cfg.end()
 }
 
+
 func TestPersist12C(t *testing.T) {
 	servers := 3
 	cfg := make_config(t, servers, false)
@@ -561,6 +562,7 @@ func TestPersist12C(t *testing.T) {
 	// crash and re-start all
 	for i := 0; i < servers; i++ {
 		cfg.start1(i)
+		DPrintf("start %v\n", i)
 	}
 	for i := 0; i < servers; i++ {
 		cfg.disconnect(i)
@@ -670,6 +672,7 @@ func TestPersist32C(t *testing.T) {
 
 	cfg.end()
 }
+
 
 //
 // Test the scenarios described in Figure 8 of the extended Raft paper. Each

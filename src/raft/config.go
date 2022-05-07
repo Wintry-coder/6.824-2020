@@ -466,12 +466,19 @@ func (cfg *config) one(cmd interface{}, expectedServers int, retry bool) int {
 				time.Sleep(20 * time.Millisecond)
 			}
 			if retry == false {
+				for i := 0; i < cfg.n; i++ {
+					cfg.rafts[i].ShowState()
+				}				
 				cfg.t.Fatalf("one(%v) failed to reach agreement", cmd)
 			}
 		} else {
+
 			time.Sleep(50 * time.Millisecond)
 		}
 	}
+	for i := 0; i < cfg.n; i++ {
+		cfg.rafts[i].ShowState()
+	}	
 	cfg.t.Fatalf("one(%v) failed to reach agreement", cmd)
 	return -1
 }
